@@ -12,7 +12,7 @@
 	<files>
 		<filename module="mod_hero_slider">mod_hero_slider.php</filename>
 		<filename>index.html</filename>
-		<filename>Hero Sliders.xml</filename>
+		<filename>slides.xml</filename>
 		<folder>tmpl</folder>
 	</files>
 
