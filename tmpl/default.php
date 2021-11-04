@@ -36,42 +36,42 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
 
 
 
-<div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
+<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="animation: push">
 
-    <ul class="uk-slideshow-items">
+    <ul class="jl-slideshow-items">
         <li>
-            <img src="images/photo.jpg" alt="" uk-cover>
-            <div class="uk-position-center uk-position-small uk-text-center uk-light">
-                <h2 class="uk-margin-remove">Center</h2>
-                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="http://lorempixel.com/1280/720" alt="" jl-cover>
+            <div class="jl-position-center jl-position-small jl-text-center jl-light">
+                <h2 class="jl-margin-remove">Center</h2>
+                <p class="jl-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </li>
         <li>
-            <img src="images/dark.jpg" alt="" uk-cover>
-            <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
-                <h3 class="uk-margin-remove">Bottom</h3>
-                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="http://lorempixel.com/1280/720" alt="" jl-cover>
+            <div class="jl-position-bottom jl-position-medium jl-text-center jl-light">
+                <h3 class="jl-margin-remove">Bottom</h3>
+                <p class="jl-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </li>
         <li>
-            <img src="images/light.jpg" alt="" uk-cover>
-            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-                <h3 class="uk-margin-remove">Overlay Bottom</h3>
-                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="http://lorempixel.com/1280/720" alt="" jl-cover>
+            <div class="jl-overlay jl-overlay-primary jl-position-bottom jl-text-center">
+                <h3 class="jl-margin-remove">Overlay Bottom</h3>
+                <p class="jl-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </li>
         <li>
-            <img src="images/dark.jpg" alt="" uk-cover>
-            <div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
-                <h3 class="uk-margin-remove">Overlay Bottom Right</h3>
-                <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
+            <img src="http://lorempixel.com/1280/720" alt="" jl-cover>
+            <div class="jl-overlay jl-overlay-default jl-position-bottom-right jl-position-small">
+                <h3 class="jl-margin-remove">Overlay Bottom Right</h3>
+                <p class="jl-margin-remove">Lorem ipsum dolor sit amet.</p>
             </div>
         </li>
     </ul>
 
-    <div class="uk-light">
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    <div class="jl-light">
+        <a class="jl-position-center-left jl-position-small jl-hidden-hover" href="#" jl-slidenav-previous jl-slideshow-item="previous"></a>
+        <a class="jl-position-center-right jl-position-small jl-hidden-hover" href="#" jl-slidenav-next jl-slideshow-item="next"></a>
     </div>
 
 </div>
