@@ -22,8 +22,8 @@
 		<folder>js</folder>
 	</media>
 
-	<media folder="media/images" destination="slides">
-		<folder>slides</folder>
+	<media folder="media/images" destination="sliders">
+		<folder>sliders</folder>
 	</media>
 
 	<config>
