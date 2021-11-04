@@ -35,7 +35,7 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
                     <p jl-margin>
                         <a class="jl-button jl-button-primary" href="<?php 
                         if($slide->link_type == '0') {
-                            echo JRoute::_(" index.php?Itemid={$slide->menuitem}");
+                            echo JRoute::_("index.php?Itemid={$slide->menuitem}");
                         } else {
                             echo $slide->link;
                         } ?>">
