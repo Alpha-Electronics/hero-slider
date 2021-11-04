@@ -47,19 +47,21 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
 
             <li>
                 <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-cover>
-                <div class="jl-position-<?php echo $align; ?> jl-position-medium jl-text-left jl-width-2-5@l background-gradient-<?php echo $align; ?>">
-                    <div class="jl-margin-remove jl-heading-medium jl-text-bold"><?php echo $slide->title; ?></div>
-                    <div class="jl-margin-remove jl-heading-small"><?php echo $slide->sub_title; ?></div>
-                    <p jl-margin>
-                        <a class="jl-button jl-button-primary" href="<?php
-                                                                        if ($slide->link_type == '0') {
-                                                                            echo JRoute::_("index.php?Itemid={$slide->menuitem}");
-                                                                        } else {
-                                                                            echo $slide->link;
-                                                                        } ?>">
-                            <?php echo $slide->button_text; ?>
-                        </a>
-                    </p>
+                <div class="jl-position-<?php echo $align; ?> jl-text-left jl-width-2-5@l background-gradient-<?php echo $align; ?>">
+                    <div class="jl-position-medium">
+                        <div class="jl-margin-remove jl-heading-medium jl-text-bold"><?php echo $slide->title; ?></div>
+                        <div class="jl-margin-remove jl-heading-small"><?php echo $slide->sub_title; ?></div>
+                        <p jl-margin>
+                            <a class="jl-button jl-button-primary" href="<?php
+                                                                            if ($slide->link_type == '0') {
+                                                                                echo JRoute::_("index.php?Itemid={$slide->menuitem}");
+                                                                            } else {
+                                                                                echo $slide->link;
+                                                                            } ?>">
+                                <?php echo $slide->button_text; ?>
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </li>
         <?php endforeach; ?>
