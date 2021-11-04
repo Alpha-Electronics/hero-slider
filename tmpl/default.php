@@ -40,28 +40,28 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
 
     <ul class="jl-slideshow-items">
         <li>
-            <img src="http://lorempixel.com/1280/720" alt="" jl-cover>
+            <img src="http://lorempixel.com/1024/768/nature/" alt="" jl-cover>
             <div class="jl-position-center jl-position-small jl-text-center jl-light">
                 <h2 class="jl-margin-remove">Center</h2>
                 <p class="jl-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </li>
         <li>
-            <img src="http://lorempixel.com/1280/720" alt="" jl-cover>
+            <img src="http://lorempixel.com/1024/768/sports/" alt="" jl-cover>
             <div class="jl-position-bottom jl-position-medium jl-text-center jl-light">
                 <h3 class="jl-margin-remove">Bottom</h3>
                 <p class="jl-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </li>
         <li>
-            <img src="http://lorempixel.com/1280/720" alt="" jl-cover>
+            <img src="http://lorempixel.com/1024/768/transport/" alt="" jl-cover>
             <div class="jl-overlay jl-overlay-primary jl-position-bottom jl-text-center">
                 <h3 class="jl-margin-remove">Overlay Bottom</h3>
                 <p class="jl-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </li>
         <li>
-            <img src="http://lorempixel.com/1280/720" alt="" jl-cover>
+            <img src="http://lorempixel.com/1024/768/food/" alt="" jl-cover>
             <div class="jl-overlay jl-overlay-default jl-position-bottom-right jl-position-small">
                 <h3 class="jl-margin-remove">Overlay Bottom Right</h3>
                 <p class="jl-margin-remove">Lorem ipsum dolor sit amet.</p>
