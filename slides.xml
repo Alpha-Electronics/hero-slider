@@ -9,7 +9,7 @@
   			<option value="">Please Select</option>
   			<option value="0">Left</option>
   			<option value="1">Right</option>
-		</field>
+		</field> 
 		<field name="link_type" type="list" default="" required="true" label="Select link type" description="">
   			<option value="">Please Select</option>
   			<option value="0">Menu Item</option>
