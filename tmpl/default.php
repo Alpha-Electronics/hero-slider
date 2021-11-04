@@ -29,9 +29,9 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
 
             <li>
                 <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-cover>
-                <div class="jl-position-<?php echo $align; ?> jl-position-medium jl-text-left">
-                    <h2 class="jl-margin-remove"><?php echo $slide->title; ?></h2>
-                    <h2 class="jl-margin-remove"><?php echo $slide->sub_title; ?></h2>
+                <div class="jl-position-<?php echo $align; ?> jl-position-medium jl-text-left jl-width-2-5@l">
+                    <div class="jl-margin-remove jl-heading-medium jl-text-bold"><?php echo $slide->title; ?></div>
+                    <div class="jl-margin-remove jl-heading-small"><?php echo $slide->sub_title; ?></div>
                     <p jl-margin>
                         <a class="jl-button jl-button-primary" href="<?php 
                         if($slide->link_type == '0') {
