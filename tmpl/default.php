@@ -23,8 +23,6 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
     }
 ?>
 
-<?php print_r( $slides , TRUE); ?>
-
 <div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="animation: scale">
 
     <ul class="jl-slideshow-items">
@@ -47,34 +45,6 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
             </div>
         </li>
     <?php endforeach; ?>
-    </ul>
-
-    <div class="jl-light">
-        <a class="jl-position-center-left jl-position-small jl-hidden-hover" href="#" jl-slidenav-previous jl-slideshow-item="previous"></a>
-        <a class="jl-position-center-right jl-position-small jl-hidden-hover" href="#" jl-slidenav-next jl-slideshow-item="next"></a>
-    </div>
-
-</div>
-
-
-
-<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="animation: scale">
-
-    <ul class="jl-slideshow-items">
-        <li>
-            <img src="http://lorempixel.com/1024/768/transport/" alt="" jl-cover>
-            <div class="jl-position-center-left jl-position-small jl-text-center jl-light">
-                <h2 class="jl-margin-remove">Left</h2>
-                <p class="jl-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </li>
-        <li>
-            <img src="http://lorempixel.com/1024/768/sports/" alt="" jl-cover>
-            <div class="jl-position-center-right jl-position-small jl-text-center jl-light">
-                <h3 class="jl-margin-remove">Right</h3>
-                <p class="jl-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </li>
     </ul>
 
     <div class="jl-light">
