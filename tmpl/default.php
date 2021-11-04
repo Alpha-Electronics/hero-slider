@@ -29,7 +29,7 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
 
             <li>
                 <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-cover>
-                <div class="jl-position-<?php echo $align; ?> jl-position-medium jl-text-left jl-light">
+                <div class="jl-position-<?php echo $align; ?> jl-position-medium jl-text-left">
                     <h2 class="jl-margin-remove"><?php echo $slide->title; ?></h2>
                     <h2 class="jl-margin-remove"><?php echo $slide->sub_title; ?></h2>
                     <p jl-margin>
