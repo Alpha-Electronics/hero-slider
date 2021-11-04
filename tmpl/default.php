@@ -14,6 +14,24 @@ use Joomla\CMS\HTML\HTMLHelper;
 HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['version' => 'auto', 'relative' => true]);
 ?>
 
+<style>
+    .background-gradient-right {
+        background: rgb(255, 255, 255);
+        background: -moz-linear-gradient(90deg, rgba(166, 19, 172, 0) 0%, rgba(255, 255, 255, 1) 50%);
+        background: -webkit-linear-gradient(90deg, rgba(166, 19, 172, 0) 0%, rgba(255, 255, 255, 1) 50%);
+        background: linear-gradient(90deg, rgba(166, 19, 172, 0) 0%, rgba(255, 255, 255, 1) 50%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#a613ac", endColorstr="#ffffff", GradientType=1);
+    }
+
+    .background-gradient-left {
+        background: rgb(255, 255, 255);
+        background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(166, 19, 172, 0) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(166, 19, 172, 0) 100%);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(166, 19, 172, 0) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#a613ac", GradientType=1);
+    }
+</style>
+
 <div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="animation: scale">
 
     <ul class="jl-slideshow-items">
@@ -33,12 +51,12 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
                     <div class="jl-margin-remove jl-heading-medium jl-text-bold"><?php echo $slide->title; ?></div>
                     <div class="jl-margin-remove jl-heading-small"><?php echo $slide->sub_title; ?></div>
                     <p jl-margin>
-                        <a class="jl-button jl-button-primary" href="<?php 
-                        if($slide->link_type == '0') {
-                            echo JRoute::_("index.php?Itemid={$slide->menuitem}");
-                        } else {
-                            echo $slide->link;
-                        } ?>">
+                        <a class="jl-button jl-button-primary" href="<?php
+                                                                        if ($slide->link_type == '0') {
+                                                                            echo JRoute::_("index.php?Itemid={$slide->menuitem}");
+                                                                        } else {
+                                                                            echo $slide->link;
+                                                                        } ?>">
                             <?php echo $slide->button_text; ?>
                         </a>
                     </p>
