@@ -23,6 +23,8 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
     }
 ?>
 
+<?php print_r( $slides , TRUE); ?>
+
 <div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="animation: scale">
 
     <ul class="jl-slideshow-items">

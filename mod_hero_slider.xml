@@ -33,7 +33,7 @@
 					name="slides"
 					type="subform"
 					formsource="modules/mod_hero_slider/slides.xml"
-					label="Slides Details"
+					label="Slide Details"
 					multiple="true" />
 
 				<field
