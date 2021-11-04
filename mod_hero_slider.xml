@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.9" client="site" method="upgrade">
+	<name>Alpha Electronics Hero Slider Module</name>
+	<author>Russell English</author>
+	<creationDate>4 November 2021</creationDate>
+	<copyright>Copyright (C) 2021 | Russell English</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>russell.english@stormit.co.uk</authorEmail>
+	<version>1.0</version>
+	<description>Alpha Electronics Hero Slider Module</description>
+
+	<files>
+		<filename module="mod_hero_slider">mod_hero_slider.php</filename>
+		<filename>index.html</filename>
+		<filename>Hero Sliders.xml</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<media folder="media" destination="mod_hero_slider">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+	<media folder="media/images" destination="slides">
+		<folder>slides</folder>
+	</media>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="Slides"
+					type="subform"
+					formsource="modules/mod_hero_slider/slides.xml"
+					label="Slides Details"
+					multiple="true" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

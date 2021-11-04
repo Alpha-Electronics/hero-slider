@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="locations" label="Location Details">
+		<field name="marker" type="media" directory="images/location" />
+		<field name="name" type="text" default="" label="Location Name" description="Enter Location Name" filter="raw" />
+		<field name="address_one" type="text" default="" label="Address Line One" description="" filter="raw"/>
+		<field name="address_two" type="text" default="" label="Address Line Two" description="" filter="raw"/>
+		<field name="address_three" type="text" default="" label="Address Line Three" description="" filter="raw"/>
+		<field name="number" type="text" default="" label="Phone Number" description="" filter="raw" />
+	</fieldset>
+</form>
