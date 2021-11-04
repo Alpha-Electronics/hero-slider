@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form>
 	<fieldset name="locations" label="Location Details">
-		<field name="marker" type="media" directory="images/location" />
-		<field name="name" type="text" default="" label="Location Name" description="Enter Location Name" filter="raw" />
-		<field name="address_one" type="text" default="" label="Address Line One" description="" filter="raw"/>
-		<field name="address_two" type="text" default="" label="Address Line Two" description="" filter="raw"/>
-		<field name="address_three" type="text" default="" label="Address Line Three" description="" filter="raw"/>
-		<field name="number" type="text" default="" label="Phone Number" description="" filter="raw" />
+		<field name="background_image" type="media" directory="stories" label="Select background image"/>
+		<field name="title" type="text" default="" label="Title" description="" filter="raw" />
+		<field name="sub_title" type="text" default="" label="Subtitle" description="" filter="raw"/>
+		<field name="button_text" type="text" default="" label="Button Text" description="" filter="raw"/>
+		<field name="link_type" type="list" default="" required="true" label="Select link type" description="">
+  			<option value="">Please Select</option>
+  			<option value="0">Menu Item</option>
+  			<option value="1">URL</option>
+		</field>
+		<field name="menuitem" showon="link_type:0" type="menuitem" default="45" label="Select a menu item" description="Select a menu item" />
+		<field name="link" showon="link_type:1" type="url" default="" label="Enter a URL" description="" size="10" />
 	</fieldset>
 </form>
