@@ -17,37 +17,36 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
 <div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="animation: scale">
 
     <ul class="jl-slideshow-items">
-    <?php foreach ($slides as $slide) : ?>
+        <?php foreach ($slides as $slide) : ?>
 
-        
-<?php 
-    if($slide->text_align == '0') {
-        $align = 'left';
-    }
-    else {
-        $align = 'right';
-    }
-?>
+            <?php
+            if ($slide->text_align == '0') {
+                $align = 'left';
+            } else {
+                $align = 'right';
+            }
+            ?>
 
-
-        <li>
-            <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-cover>
-            <div class="jl-position-center-<?php echo $align; ?> jl-position-small jl-text-center jl-light">
-                <h2 class="jl-margin-remove"><?php echo $slide->title; ?></h2>
-                <h2 class="jl-margin-remove"><?php echo $slide->sub_title; ?></h2>
-                <p jl-margin>
-                    <a class="jl-button jl-button-primary" href="
-                    <?php if($slide->link_type == '0') { ?>
-                        JRoute::_("index.php?Itemid={$slide->menuitem}");
-                    <?php } else {
-                        echo $slide->link;
-                    } ?>">
-                    <?php echo $slide->button_text; ?>
-                    </a>
-                </p>
-            </div>
-        </li>
-    <?php endforeach; ?>
+            <li>
+                <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-cover>
+                <div class="jl-position-<?php echo $align; ?> jl-position-small jl-text-center jl-light">
+                    <div class="jl-text-middle">
+                        <h2 class="jl-margin-remove"><?php echo $slide->title; ?></h2>
+                        <h2 class="jl-margin-remove"><?php echo $slide->sub_title; ?></h2>
+                        <p jl-margin>
+                            <a class="jl-button jl-button-primary" href="
+                    <?php if ($slide->link_type == '0') { ?>
+                        JRoute::_(" index.php?Itemid={$slide->menuitem}");
+                                <?php } else {
+                                echo $slide->link;
+                            } ?>">
+                                <?php echo $slide->button_text; ?>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        <?php endforeach; ?>
     </ul>
 
     <div class="jl-light">
