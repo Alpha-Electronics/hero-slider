@@ -14,8 +14,17 @@ use Joomla\CMS\HTML\HTMLHelper;
 HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['version' => 'auto', 'relative' => true]);
 ?>
 
+<?php 
+    if($text_align == '0') {
+        $align = 'left';
+    }
+    else {
+        $align = 'right';
+    }
+?>
+
 <div id="locations" class="jl-child-width-expand@s" jl-grid>
-    <?php foreach ($locations as $location) : ?>
+    <?php foreach ($slides as $slides) : ?>
 
         <div>
             <div class="jl-card jl-card-body jl-text-center">
@@ -33,6 +42,36 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
     <?php endforeach; ?>
 </div>
 
+<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="animation: scale">
+
+    <ul class="jl-slideshow-items">
+    <?php foreach ($slides as $slides) : ?>
+        <li>
+            <img src="<?php echo $background_image; ?>" alt="<?php echo $title; ?>" jl-cover>
+            <div class="jl-position-center-<?php echo $align; ?> jl-position-small jl-text-center jl-light">
+                <h2 class="jl-margin-remove"><?php echo $title; ?></h2>
+                <h2 class="jl-margin-remove"><?php echo $sub_title; ?></h2>
+                <p jl-margin>
+                    <a class="jl-button jl-button-primary" href="
+                    <?php if($link_type == '0') { ?>
+                        JRoute::_("index.php?Itemid={$menuitem}");
+                    <?php } else {
+                        echo '$link';
+                    } ?>">
+                    <?php echo $button_text; ?>
+                    </a>
+                </p>
+            </div>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+
+    <div class="jl-light">
+        <a class="jl-position-center-left jl-position-small jl-hidden-hover" href="#" jl-slidenav-previous jl-slideshow-item="previous"></a>
+        <a class="jl-position-center-right jl-position-small jl-hidden-hover" href="#" jl-slidenav-next jl-slideshow-item="next"></a>
+    </div>
+
+</div>
 
 
 
