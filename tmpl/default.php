@@ -33,10 +33,10 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
                     <h2 class="jl-margin-remove"><?php echo $slide->title; ?></h2>
                     <h2 class="jl-margin-remove"><?php echo $slide->sub_title; ?></h2>
                     <p jl-margin>
-                        <a class="jl-button jl-button-primary" href="
-                    <?php if ($slide->link_type == '0') { ?>
-                        JRoute::_(" index.php?Itemid={$slide->menuitem}");
-                            <?php } else {
+                        <a class="jl-button jl-button-primary" href="<?php 
+                        if($slide->link_type == '0') {
+                            echo JRoute::_(" index.php?Itemid={$slide->menuitem}");
+                        } else {
                             echo $slide->link;
                         } ?>">
                             <?php echo $slide->button_text; ?>
