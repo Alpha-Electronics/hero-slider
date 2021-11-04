@@ -14,8 +14,14 @@ use Joomla\CMS\HTML\HTMLHelper;
 HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['version' => 'auto', 'relative' => true]);
 ?>
 
+<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="animation: scale">
+
+    <ul class="jl-slideshow-items">
+    <?php foreach ($slides as $slide) : ?>
+
+        
 <?php 
-    if($text_align == '0') {
+    if($slide->text_align == '0') {
         $align = 'left';
     }
     else {
@@ -23,10 +29,7 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
     }
 ?>
 
-<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="animation: scale">
 
-    <ul class="jl-slideshow-items">
-    <?php foreach ($slides as $slide) : ?>
         <li>
             <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-cover>
             <div class="jl-position-center-<?php echo $align; ?> jl-position-small jl-text-center jl-light">
