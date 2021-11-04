@@ -30,7 +30,7 @@
 		<fields name="params">
 			<fieldset name="basic">
 				<field
-					name="Slides"
+					name="slides"
 					type="subform"
 					formsource="modules/mod_hero_slider/slides.xml"
 					label="Slides Details"
