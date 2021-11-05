@@ -15,7 +15,7 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
 ?>
 
 <style>
-    .background-gradient-right {
+    .jl-position-right.jl-overlay-default {
         background: rgb(255, 255, 255);
         background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.19931722689075626) 0%, rgba(255, 255, 255, 1) 80%);
         background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.19931722689075626) 0%, rgba(255, 255, 255, 1) 80%);
@@ -23,7 +23,7 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
     }
 
-    .background-gradient-left {
+    .jl-position-left.jl-overlay-default {
         background: rgb(255, 255, 255);
         background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.19931722689075626) 100%);
         background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.19931722689075626) 100%);
