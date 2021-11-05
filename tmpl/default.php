@@ -28,21 +28,22 @@ use Joomla\CMS\HTML\HTMLHelper;
             ?>
 
             <li>
-                <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-cover>
-                <div class="jl-position-center-<?php echo $align; ?> jl-text-left jl-width-1-2@l jl-overlay jl-overlay-default ">
-                    <div class="jl-width-5-6@l jl-position-medium">
-                        <div class="jl-margin-remove jl-heading-medium jl-text-bold text-black"><?php echo $slide->title; ?></div>
-                        <div class="jl-margin-remove jl-text-lead text-black"><?php echo $slide->sub_title; ?></div>
-                        <p jl-margin>
-                            <a class="jl-button jl-button-primary" href="<?php
-                                                                            if ($slide->link_type == '0') {
-                                                                                echo JRoute::_("index.php?Itemid={$slide->menuitem}");
-                                                                            } else {
-                                                                                echo $slide->link;
-                                                                            } ?>">
-                                <?php echo $slide->button_text; ?>
-                            </a>
-                        </p>
+                <div class="jl-height-medium jl-flex jl-flex-center jl-flex-middle jl-background-cover jl-light" data-src="<?php echo $slide->background_image; ?>" jl-img>
+                    <div class="jl-position-center-<?php echo $align; ?> jl-text-left jl-width-1-2@l jl-overlay jl-overlay-default ">
+                        <div class="jl-width-5-6@l jl-position-medium">
+                            <div class="jl-margin-remove jl-heading-medium jl-text-bold text-black"><?php echo $slide->title; ?></div>
+                            <div class="jl-margin-remove jl-text-lead text-black"><?php echo $slide->sub_title; ?></div>
+                            <p jl-margin>
+                                <a class="jl-button jl-button-primary" href="<?php
+                                                                                if ($slide->link_type == '0') {
+                                                                                    echo JRoute::_("index.php?Itemid={$slide->menuitem}");
+                                                                                } else {
+                                                                                    echo $slide->link;
+                                                                                } ?>">
+                                    <?php echo $slide->button_text; ?>
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </li>
