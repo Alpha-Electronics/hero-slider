@@ -15,7 +15,6 @@
 		<filename>slides.xml</filename>
 		<filename>media/css/mod_hero_slider.css</filename>
 		<folder>tmpl</folder>
-		<folder>media/images</folder>
 	</files>
 
 	<media folder="media" destination="mod_hero_slider">
