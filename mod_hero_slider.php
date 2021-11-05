@@ -7,6 +7,9 @@
  */
 
 defined('_JEXEC') or die('Restricted access');
+use Joomla\CMS\Factory;
+
+$document = Factory::getDocument();
 
 use Joomla\CMS\Helper\ModuleHelper;
 
