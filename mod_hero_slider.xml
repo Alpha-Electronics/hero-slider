@@ -18,8 +18,7 @@
 
 	<media folder="media" destination="mod_hero_slider">
 		<filename>index.html</filename>
-		<folder>css</folder>
-		<folder>js</folder>
+		<filename>mod_hero_slider.css</filename>
 	</media>
 
 	<media folder="media/images" destination="sliders">

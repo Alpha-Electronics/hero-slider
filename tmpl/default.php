@@ -11,26 +11,8 @@ defined('_JEXEC') or die('Restricted access');
 
 use Joomla\CMS\HTML\HTMLHelper;
 
-HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['version' => 'auto', 'relative' => true]);
 ?>
 
-<style>
-    .jl-position-right.jl-overlay-default {
-        background: rgb(255, 255, 255);
-        background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 80%);
-        background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 80%);
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 80%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
-    }
-
-    .jl-position-left.jl-overlay-default {
-        background: rgb(255, 255, 255);
-        background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
-        background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
-        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
-    }
-</style>
 
 <div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="animation: scale">
 
@@ -48,7 +30,7 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
             <li>
                 <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-cover>
                 <div class="jl-position-<?php echo $align; ?> jl-text-left jl-width-1-2@l jl-overlay jl-overlay-default ">
-                    <div class="jl-width-2-5@l jl-position-medium">
+                    <div class="jl-width-5-6@l jl-position-medium">
                         <div class="jl-margin-remove jl-heading-medium jl-text-bold"><?php echo $slide->title; ?></div>
                         <div class="jl-margin-remove jl-heading-small"><?php echo $slide->sub_title; ?></div>
                         <p jl-margin>
