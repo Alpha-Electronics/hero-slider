@@ -49,7 +49,7 @@ use Joomla\CMS\HTML\HTMLHelper;
         <?php endforeach; ?>
     </ul>
 
-    <div class="jl-light">
+    <div class="jl-dark">
         <a class="jl-position-center-left jl-position-small jl-hidden-hover" href="#" jl-slidenav-previous jl-slideshow-item="previous"></a>
         <a class="jl-position-center-right jl-position-small jl-hidden-hover" href="#" jl-slidenav-next jl-slideshow-item="next"></a>
     </div>
