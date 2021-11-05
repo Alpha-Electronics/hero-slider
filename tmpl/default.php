@@ -15,7 +15,26 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
 ?>
 
 <style>
-    .background-gradient-right {
+    .img-gradient {
+        position: relative;
+        display: inline-block;
+    }
+
+    .img-gradient:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .img-gradient img {
+        display: block;
+    }
+
+    .background-gradient-right:after {
         background: rgb(255, 255, 255);
         background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.19931722689075626) 0%, rgba(255, 255, 255, 1) 80%);
         background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.19931722689075626) 0%, rgba(255, 255, 255, 1) 80%);
@@ -23,7 +42,7 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
     }
 
-    .background-gradient-left {
+    .background-gradient-left:after {
         background: rgb(255, 255, 255);
         background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.19931722689075626) 100%);
         background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.19931722689075626) 100%);
@@ -46,8 +65,10 @@ HTMLHelper::_('stylesheet', 'mod_hero_slider/media/css/mod_hero_slider.css', ['v
             ?>
 
             <li>
-                <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-cover>
-                <div class="jl-position-<?php echo $align; ?> jl-text-left jl-width-2-5@l background-gradient-<?php echo $align; ?>">
+                <div class="img-gradient background-gradient-<?php echo $align; ?>">
+                    <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-cover>
+                </div>
+                <div class="jl-position-<?php echo $align; ?> jl-text-left jl-width-2-5@l">
                     <div class="jl-position-medium">
                         <div class="jl-margin-remove jl-heading-medium jl-text-bold"><?php echo $slide->title; ?></div>
                         <div class="jl-margin-remove jl-heading-small"><?php echo $slide->sub_title; ?></div>
