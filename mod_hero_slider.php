@@ -18,4 +18,4 @@ $slides = $params->get('slides');
 require ModuleHelper::getLayoutPath('mod_hero_slider');
 
 $options = array("version" => "auto");
-$document->addStyleSheet(JURI::root() . "modules/mod_hero_slider/css/mod_hero_slider.css", $options);
+$document->addStyleSheet(JURI::root() . "modules/mod_hero_slider/media/css/mod_hero_slider.css", $options);
