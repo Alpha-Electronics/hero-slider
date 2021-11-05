@@ -29,10 +29,10 @@ use Joomla\CMS\HTML\HTMLHelper;
 
             <li>
                 <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-cover>
-                <div class="jl-position-<?php echo $align; ?> jl-text-left jl-width-1-2@l jl-overlay jl-overlay-default ">
+                <div class="jl-position-center-<?php echo $align; ?> jl-text-left jl-width-1-2@l jl-overlay jl-overlay-default ">
                     <div class="jl-width-5-6@l jl-position-medium">
                         <div class="jl-margin-remove jl-heading-medium jl-text-bold text-black"><?php echo $slide->title; ?></div>
-                        <div class="jl-margin-remove jl-heading-small text-black"><?php echo $slide->sub_title; ?></div>
+                        <div class="jl-margin-remove jl-text-lead text-black"><?php echo $slide->sub_title; ?></div>
                         <p jl-margin>
                             <a class="jl-button jl-button-primary" href="<?php
                                                                             if ($slide->link_type == '0') {
