@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form>
 	<fieldset name="slides" label="Slide Details">
-		<field name="background_image" type="media" directory="stories" label="Select background image"/>
+		<field name="background_image" type="media" directory="" label="Select background image"/>
 		<field name="title" type="text" default="" label="Title" description="" filter="raw" />
 		<field name="sub_title" type="text" default="" label="Subtitle" description="" filter="raw"/>
 		<field name="button_text" type="text" default="" label="Button Text" description="" filter="raw"/>
