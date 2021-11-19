@@ -7,8 +7,15 @@
 		<field name="button_text" type="text" default="" label="Button Text" description="" filter="raw"/>
 		<field name="text_align" type="list" default="" required="true" label="Text align" description="">
   			<option value="">Please Select</option>
-  			<option value="0">Left</option>
-  			<option value="1">Right</option>
+			<option value="0">Top left</option>
+			<option value="1">Top center</option>
+			<option value="2">Top right</option>
+			<option value="3">Center</option>
+			<option value="4">Center left</option>
+			<option value="5">Center right</option>
+			<option value="6">Bottom left</option>
+			<option value="7">Bottom center</option>
+			<option value="8">Bottom right</option>
 		</field> 
 		<field name="link_type" type="list" default="" required="true" label="Select link type" description="">
   			<option value="">Please Select</option>

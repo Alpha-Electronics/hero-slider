@@ -27,9 +27,37 @@ use Joomla\CMS\HTML\HTMLHelper;
             }
             ?>
 
+            <?php
+            if ($slide->text_align == '0') {
+                $align = 'jl-position-top-left';
+            }
+            if ($slide->text_align == '1') {
+                $align = 'jl-position-top-center';
+            }
+            if ($slide->text_align == '2') {
+                $align = 'jl-position-top-right';
+            }
+            if ($slide->text_align == '3') {
+                $align = 'jl-position-center';
+            }
+            if ($slide->text_align == '4') {
+                $align = 'jl-position-center-left';
+            }
+            if ($slide->text_align == '5') {
+                $align = 'jl-position-center-right';
+            }
+            if ($slide->text_align == '6') {
+                $align = 'jl-position-bottom-left';
+            }
+            if ($slide->text_align == '7') {
+                $align = 'jl-position-bottom-center';
+            }
+            if ($slide->text_align == '8') {
+                $align = 'jl-position-bottom-right';
+            } ?>
             <li>
                 <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-contain>
-                <div class="jl-position-center-<?php echo $align; ?> jl-text-left jl-width-1-2@l jl-overlay jl-overlay-default ">
+                <div class="<?php echo $align; ?> jl-text-left jl-width-1-2@l jl-overlay jl-overlay-default ">
                     <div class="jl-width-5-6@l jl-position-medium">
                         <div class="jl-margin-remove jl-heading-medium jl-text-bold text-black"><?php echo $slide->title; ?></div>
                         <div class="jl-margin-remove jl-text-lead text-black"><?php echo $slide->sub_title; ?></div>
