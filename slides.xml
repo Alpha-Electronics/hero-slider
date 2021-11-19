@@ -8,8 +8,8 @@
   			<option value="1">Video</option>
 		</field>
 		<field name="background_image" showon="background_type:0" type="media" directory="" label="Select background image"/>
+		<field name="upload_video" showon="background_type:1" type="media" directory="" label="Upload your video and save"/>
 		<field name="background_video" showon="background_type:1" type="Videos" label="Select a video" description="" directory="images"  /> 
-		<field type="filelist" name="test" label="Video filter" directory="images" filter="\.mov$|\.mpg$|\.mp4$|\.ogv$|\.webm$|\.mts$|\.avi$|\.wmv$" />
 		<field name="title" type="text" default="" label="Title" description="" filter="raw" />
 		<field name="sub_title" type="text" default="" label="Subtitle" description="" filter="raw"/>
 		<field name="button_text" type="text" default="" label="Button Text" description="" filter="raw"/>
