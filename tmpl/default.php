@@ -62,6 +62,9 @@ use Joomla\CMS\HTML\HTMLHelper;
                 <?php }
                 if ($slide->background_type == '1') { ?>
                     <video src="images/<?php echo $slide->background_video; ?>" loop muted playsinline jl-video="autoplay: inview"></video>
+                <?php } 
+                if ($slide->background_type == '2') { ?>
+                    <iframe src="https://www.youtube-nocookie.com/embed/<?php echo $slide->youtube;?>?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen jl-responsive jl-video="automute: true"></iframe>
                 <?php } ?>
 
                 <div class="<?php echo $align; ?> jl-text-left jl-width-1-2@l jl-overlay jl-overlay-default ">
