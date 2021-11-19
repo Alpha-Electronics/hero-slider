@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form>
-	<fieldset name="slides" label="Slide Details">
-		<field name="background_image" type="media" directory="" label="Select background image"/>
+	<fieldset name="slides" label="Slide Details" addfieldpath="/modules/mod_hero_slider/models/fields">
+	
+		<field name="background_type" type="list" default="" required="true" label="Select background type" description="">
+  			<option value="">Please Select</option>
+  			<option value="0">Image</option>
+  			<option value="1">Video</option>
+		</field>
+		<field name="background_image" showon="background_type:0" type="media" directory="" label="Select background image"/>
+		<field name="background_video" showon="background_type:1" type="Videos" label="Select a video" description="" directory="images"  /> 
+		<field type="filelist" name="test" label="Video filter" directory="images" filter="\.mov$|\.mpg$|\.mp4$|\.ogv$|\.webm$|\.mts$|\.avi$|\.wmv$" />
 		<field name="title" type="text" default="" label="Title" description="" filter="raw" />
 		<field name="sub_title" type="text" default="" label="Subtitle" description="" filter="raw"/>
 		<field name="button_text" type="text" default="" label="Button Text" description="" filter="raw"/>
