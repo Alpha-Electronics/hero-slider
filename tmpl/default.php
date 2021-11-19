@@ -57,12 +57,12 @@ use Joomla\CMS\HTML\HTMLHelper;
             } ?>
             <li>
 
-            <?php if ($slide->background_type == '0') { ?>
-                <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-contain>
-<?php }
-if ($slide->background_type == '1') { ?>
-                <video src="<?php echo $slide->background_video; ?>" loop muted playsinline jl-video="autoplay: inview"></video>
-<?php } ?>
+                <?php if ($slide->background_type == '0') { ?>
+                    <img src="<?php echo $slide->background_image; ?>" alt="<?php echo $slide->title; ?>" jl-contain>
+                <?php }
+                if ($slide->background_type == '1') { ?>
+                    <video src="images/<?php echo $slide->background_video; ?>" loop muted playsinline jl-video="autoplay: inview"></video>
+                <?php } ?>
 
                 <div class="<?php echo $align; ?> jl-text-left jl-width-1-2@l jl-overlay jl-overlay-default ">
                     <div class="jl-width-5-6@l jl-position-medium">
