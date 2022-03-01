@@ -69,8 +69,8 @@ use Joomla\CMS\HTML\HTMLHelper;
 
                 <div class="<?php echo $align; ?> jl-text-left jl-width-1-2@l jl-overlay jl-overlay-default ">
                     <div>
-                        <div class="jl-margin-remove jl-heading-small jl-text-bold text-black"><?php echo $slide->title; ?></div>
-                        <div class="jl-margin-remove jl-text-lead text-black"><?php echo $slide->sub_title; ?></div>
+                        <div class="jl-margin-remove jl-h2 jl-text-bold text-black"><?php echo $slide->title; ?></div>
+                        <div class="jl-margin-remove jl-content text-black"><?php echo $slide->sub_title; ?></div>
                         <p jl-margin>
                             <a class="jl-button jl-button-primary" href="<?php
                                                                             if ($slide->link_type == '0') {
