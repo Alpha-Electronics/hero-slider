@@ -67,7 +67,7 @@ use Joomla\CMS\HTML\HTMLHelper;
                     <iframe src="https://www.youtube-nocookie.com/embed/<?php echo $slide->youtube;?>?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen jl-responsive jl-video="automute: true"></iframe>
                 <?php } ?>
 
-                <div class="<?php echo $align; ?> jl-text-left jl-width-1-2@l jl-overlay jl-overlay-default ">
+                <div class="<?php echo $align; ?> jl-text-left jl-width-1-4@l jl-overlay jl-overlay-default ">
                     <div>
                         <div class="jl-margin-remove jl-h2 jl-text-bold text-black"><?php echo $slide->title; ?></div>
                         <div class="jl-margin-remove jl-content text-black"><?php echo $slide->sub_title; ?></div>
