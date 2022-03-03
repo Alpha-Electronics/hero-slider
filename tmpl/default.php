@@ -86,7 +86,7 @@ use Joomla\CMS\HTML\HTMLHelper;
                     </div>
                 </div>
 
-                <?php endif; ?>
+                <?php } ?>
 
             </li>
         <?php endforeach; ?>
