@@ -14,7 +14,7 @@ use Joomla\CMS\HTML\HTMLHelper;
 ?>
 
 
-<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="animation: scale; max-height:580">
+<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="autoplay: true; animation: scale; max-height:580">
 
     <ul class="jl-slideshow-items">
         <?php foreach ($slides as $slide) : ?>
