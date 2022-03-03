@@ -12,10 +12,17 @@
 		<field name="upload_video" showon="background_type:1" type="media" directory="" label="Upload your video and save"/>
 		<field name="background_video" showon="background_type:1" type="Videos" label="Select a video" description="" directory="images"  /> 
 		<field name="youtube" showon="background_type:2" type="text" default="" label="YouTube Video ID" description="" filter="raw"/>
-		<field name="title" type="text" default="" label="Title" description="" filter="raw" />
-		<field name="sub_title" type="text" default="" label="Subtitle" description="" filter="raw"/>
-		<field name="button_text" type="text" default="" label="Button Text" description="" filter="raw"/>
-		<field name="text_align" type="list" default="" required="true" label="Text align" description="">
+		
+		<field name="show_overlay" type="list" default="" required="true" label="Show overlay?" description="">
+  			<option value="">Please Select</option>
+  			<option value="0">No</option>
+  			<option value="1">Yes</option>
+		</field>
+
+		<field showon="show_overlay:1" name="title" type="text" default="" label="Title" description="" filter="raw" />
+		<field showon="show_overlay:1" name="sub_title" type="text" default="" label="Subtitle" description="" filter="raw"/>
+		<field showon="show_overlay:1" name="button_text" type="text" default="" label="Button Text" description="" filter="raw"/>
+		<field showon="show_overlay:1" name="text_align" type="list" default="" required="true" label="Text align" description="">
   			<option value="">Please Select</option>
 			<option value="0">Top left</option>
 			<option value="1">Top center</option>
@@ -27,7 +34,7 @@
 			<option value="7">Bottom center</option>
 			<option value="8">Bottom right</option>
 		</field> 
-		<field name="link_type" type="list" default="" required="true" label="Select link type" description="">
+		<field showon="show_overlay:1" name="link_type" type="list" default="" label="Select link type" description="">
   			<option value="">Please Select</option>
   			<option value="0">Menu Item</option>
   			<option value="1">URL</option>
