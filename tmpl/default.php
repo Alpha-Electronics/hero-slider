@@ -94,7 +94,7 @@ use Joomla\CMS\HTML\HTMLHelper;
 
                 if ($slide->background_type == '3') { ?>
 
-<div jl-grid>
+<div jl-grid class="jl-child-width-1-3">
     <div><img src="<?php echo $slide->buildit_left_image;?>"/></div>
     <div><?php echo $slide->buildit_text;?></div>
     <div><img src="<?php echo $slide->buildit_right_image;?>"/></div>
