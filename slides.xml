@@ -14,7 +14,9 @@
 		<field name="background_video" showon="background_type:1" type="Videos" label="Select a video" description="" directory="images"  /> 
 		<field name="youtube" showon="background_type:2" type="text" default="" label="YouTube Video ID" description="" filter="raw"/>
 
+		
 		<field name="buildit_left_image" showon="background_type:3" type="media" directory="" label="Select left image"/>
+		<field name="buildit_center_image" showon="background_type:3" type="media" directory="" label="Select center image"/>
 		<field name="buildit_right_image" showon="background_type:3" type="media" directory="" label="Select right image"/>
 
 		<field name="backgroundcolor" showon="background_type:3" type="color" default="#eee" format="rgba"	label="TPL_BEEZ3_FIELD_HEADER_BACKGROUND_COLOR_LABEL" description="TPL_BEEZ3_FIELD_HEADER_BACKGROUND_COLOR_DESC" />
