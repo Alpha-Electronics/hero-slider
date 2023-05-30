@@ -95,8 +95,8 @@ use Joomla\CMS\HTML\HTMLHelper;
                 if ($slide->background_type == '3') { ?>
 
 <div style="background-color:<?php echo $slide->backgroundcolor; ?>" jl-grid class="jl-child-width-1-3">
-    <div class="jl-margin-top"><img src="<?php echo $slide->buildit_left_image;?>"/></div>
-    <div class="jl-text-center">
+    <div><img src="<?php echo $slide->buildit_left_image;?>"/></div>
+    <div class="jl-text-center jl-margin-top">
         <div><img src="<?php echo $slide->buildit_center_image;?>"/></div>
         <div><?php echo $slide->buildit_text;?></div>
     </div>
