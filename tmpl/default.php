@@ -95,9 +95,9 @@ use Joomla\CMS\HTML\HTMLHelper;
                 if ($slide->background_type == '3') { ?>
 
 <div jl-grid>
-    <div><?php echo $slide->buildit_left_image;?></div>
+    <div><img src="<?php echo $slide->buildit_left_image;?>"/></div>
     <div><?php echo $slide->buildit_text;?></div>
-    <div><?php echo $slide->buildit_right_image;?></div>
+    <div><img src="<?php echo $slide->buildit_right_image;?>"/></div>
 </div>
 
                 <?php  } ?>
