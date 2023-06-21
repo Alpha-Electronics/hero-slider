@@ -2,49 +2,23 @@
 <form>
 	<fieldset name="slides" label="Slide Details" addfieldpath="/modules/mod_hero_slider/models/fields">
 	
-		<field name="background_type" type="list" default="" required="true" label="Select background type" description="">
-  			<option value="">Please Select</option>
-  			<option value="0">Image</option>
-  			<option value="1">Video</option>
-			<option value="2">YouTube</option>
-			<option value="3">Build It</option>
-		</field>
-		<field name="background_image" showon="background_type:0" type="media" directory="" label="Select background image"/>
-		<field name="upload_video" showon="background_type:1" type="media" directory="" label="Upload your video and save"/>
-		<field name="background_video" showon="background_type:1" type="Videos" label="Select a video" description="" directory="images"  /> 
-		<field name="youtube" showon="background_type:2" type="text" default="" label="YouTube Video ID" description="" filter="raw"/>
-
-		
-		<field name="buildit_left_image" showon="background_type:3" type="media" directory="" label="Select left image"/>
-		<field name="buildit_center_image" showon="background_type:3" type="media" directory="" label="Select center image"/>
-		<field name="buildit_right_image" showon="background_type:3" type="media" directory="" label="Select right image"/>
-
-		<field name="backgroundcolor" showon="background_type:3" type="color" default="#eee" format="rgba"	label="TPL_BEEZ3_FIELD_HEADER_BACKGROUND_COLOR_LABEL" description="TPL_BEEZ3_FIELD_HEADER_BACKGROUND_COLOR_DESC" />
-		
-		<field name="buildit_text" showon="background_type:3" type="editor" label="Text" description="" width="300" filter="safehtml" />
-
-		<field name="show_overlay" type="list" default="" required="true" label="Show overlay?" description="">
+		<field name="show_client_logo" type="list" default="" required="true" label="Show the client logo?" description="">
   			<option value="">Please Select</option>
   			<option value="0">No</option>
   			<option value="1">Yes</option>
 		</field>
-
-		<field showon="show_overlay:1" name="title" type="text" default="" label="Title" description="" filter="raw" />
-		<field showon="show_overlay:1" name="sub_title" type="text" default="" label="Subtitle" description="" filter="raw"/>
-		<field showon="show_overlay:1" name="button_text" type="text" default="" label="Button Text" description="" filter="raw"/>
-		<field showon="show_overlay:1" name="text_align" type="list" default="" required="true" label="Text align" description="">
+		<field name="client_logo" type="media" showon="show_client_logo:1" directory="client_logos" label="Select client logo"/>
+		<field name="title" type="text" default="" label="Title" description="" filter="raw" />
+		<field name="description" type="editor" default="" label="Description" description="" filter="safehtml" />
+		<field name="button" type="text" default="" label="Button Text" description="" filter="raw" />
+		<field name="product_image_one" type="media" directory="" label="Select product image"/>
+		<field name="new_product" type="list" default="" required="true" label="Is this a new product?" description="">
   			<option value="">Please Select</option>
-			<option value="0">Top left</option>
-			<option value="1">Top center</option>
-			<option value="2">Top right</option>
-			<option value="3">Center</option>
-			<option value="4">Center left</option>
-			<option value="5">Center right</option>
-			<option value="6">Bottom left</option>
-			<option value="7">Bottom center</option>
-			<option value="8">Bottom right</option>
-		</field> 
-		<field showon="show_overlay:1" name="link_type" type="list" default="" label="Select link type" description="">
+  			<option value="0">No</option>
+  			<option value="1">Yes</option>
+		</field>
+		<field name="backgroundcolor" type="color" default="#eee" format="rgba"	label="Set background colour" description="" />
+		<field name="link_type" type="list" default="" label="Select link type" description="">
   			<option value="">Please Select</option>
   			<option value="0">Menu Item</option>
   			<option value="1">URL</option>
