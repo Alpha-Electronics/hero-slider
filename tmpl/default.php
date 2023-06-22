@@ -23,16 +23,28 @@ use Joomla\CMS\HTML\HTMLHelper;
                 $color = '#3c4650';
             endif; ?>
 
+
+        <?php 
+            if ($slide->button_style == 0) :
+                $button_style = 'jl-button-default';
+            elseif ($slide->button_style == 1) :
+                    $button_style = 'jl-button-primary';
+            elseif ($slide->button_style == 2) :
+                    $button_style = 'jl-button-secondary';
+            elseif ($slide->button_style == 3) :
+                    $button_style = 'jl-button-text';
+            endif; ?>
+
             <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
                 <div class="jl-container">
-                    <div jl-grid class="jl-padding-small">
+                    <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right">
                         <div class="jl-width-2-3">
                             <img src="<?php echo $slide->client_logo; ?>" alt="<?php echo $slide->title; ?>" />
                             <h2 style="color:<?php echo $color; ?>"><?php echo $slide->title; ?></h2>
                             <span style="color:<?php echo $color; ?>">
                                 <?php echo $slide->description; ?>
                             </span>
-                            <div><a href="<?php echo $slide->link_type; ?>" class="jl-button jl-button-default"><?php echo $slide->button; ?></a></div>
+                            <div><a href="<?php echo $slide->link_type; ?>" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a></div>
                         </div>
                         <div class="jl-width-1-3">
                             <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" />
