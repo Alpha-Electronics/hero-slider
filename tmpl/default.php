@@ -70,7 +70,9 @@ use Joomla\CMS\HTML\HTMLHelper;
     </ul>
 
     <div class="jl-dark">
-        <a class="jl-position-center-left jl-position-small jl-hidden-hover" href="#" jl-slidenav-previous jl-slideshow-item="previous"></a>
+
+
+        <a class="fa-solid fa-circle-chevron-left" href="#" jl-slidenav-previous jl-slideshow-item="previous"></a>
         <a class="jl-position-center-right jl-position-small jl-hidden-hover" href="#" jl-slidenav-next jl-slideshow-item="next"></a>
     </div>
 </div>
