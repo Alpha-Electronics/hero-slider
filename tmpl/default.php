@@ -49,7 +49,7 @@ use Joomla\CMS\HTML\HTMLHelper;
 
             <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
                 <div class="jl-container">
-                    <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right" jl-scrollspy="target: > div; cls: jl-animation-fade; delay: 500">
+                    <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right" jl-scrollspy="target: > div; cls: jl-animation-kenburns">
                         <div class="jl-width-2-3">
                             <img src="<?php echo $slide->client_logo; ?>" alt="<?php echo $slide->title; ?>" jl-scrollspy-class="jl-animation-slide-top-small"/>
                             <h2 jl-scrollspy-class="jl-animation-slide-left-small" style="color:<?php echo $color; ?>"><?php echo $slide->title; ?></h2>
