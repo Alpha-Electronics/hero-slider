@@ -49,8 +49,8 @@ use Joomla\CMS\HTML\HTMLHelper;
 
             <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
             
-            <div class="jl-overlay jl-overlay-default jl-position-center">
-                <p>Center</p>
+            <div class="jl-overlay jl-position-center">
+                <img src="modules/mod_hero_slider/media/images/alpha-circle.svg">
             </div>
                 <div class="jl-container">
                     <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right" jl-scrollspy="target: > div">
