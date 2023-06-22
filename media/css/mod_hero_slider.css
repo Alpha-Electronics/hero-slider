@@ -2,7 +2,12 @@
     top: 0;
     background-color: rgb(255 0 0 / 90%);
     padding: 5px;
-    border: 1px solid white;
 }
 .ribbon-wrapper {
+    text-align: center;
+    line-height: 1;
+}
+.new-badge {
+    font-size: 32px;
+    line-height: 1;
 }
