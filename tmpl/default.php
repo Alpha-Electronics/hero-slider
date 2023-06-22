@@ -24,7 +24,7 @@ use Joomla\CMS\HTML\HTMLHelper;
             endif; ?>
 
             <?php if ($slide->new_product == 1) :
-                $newproduct = '<div class="jl-text-large jl-text-uppercase">New</div>Product!';
+                $newproduct = '<div class="jl-text-large jl-text-bold">New</div>Product';
             else :
                 $newproduct = '';
             endif; ?>
@@ -57,7 +57,7 @@ use Joomla\CMS\HTML\HTMLHelper;
                             <div class="jl-position-relative">
                                 <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
                                 <div class="ribbon-wrapper-container jl-position-absolute">
-                                    <div class="ribbon-wrapper" style="color:<?php echo $color; ?>">
+                                    <div class="ribbon-wrapper jl-text-center jl-text-uppercase" style="color:<?php echo $color; ?>">
                                         <?php echo $newproduct; ?>
                                     </div>
                                 </div>
