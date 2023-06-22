@@ -12,18 +12,27 @@ defined('_JEXEC') or die('Restricted access');
 use Joomla\CMS\HTML\HTMLHelper;
 
 ?>
-<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="autoplay: true; animation: scale; max-height:580">
+<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="autoplay: true; animation: scale">
 
     <ul class="jl-slideshow-items">
         <?php foreach ($slides as $slide) : ?>
+
+            <?php if ($slide->textcolor == 1) :
+                $color = 'white';
+            else :
+                $color = '#3c4650';
+            endif; ?>
+
             <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
                 <div class="jl-container">
                     <div jl-grid>
                         <div class="jl-width-2-3">
-                            <img src="<?php echo $slide->client_logo; ?>" alt="" />
-                            <h2><?php echo $slide->title; ?></h2>
-                            <?php echo $slide->description; ?>
-                            <a class="jl-button jl-button-default"><a href="<?php echo $slide->link_type; ?>"><?php echo $slide->button; ?></a>
+                            <img src="<?php echo $slide->client_logo; ?>" alt="<?php echo $slide->title; ?>" />
+                            <h2 style="color:<?php echo $color; ?>"><?php echo $slide->title; ?></h2>
+                            <span style="color:<?php echo $color; ?>">
+                                <?php echo $slide->description; ?>
+                            </span>
+                            <div><a class="jl-button jl-button-default"><a href="<?php echo $slide->link_type; ?>"><?php echo $slide->button; ?></a></div>
                         </div>
                         <div class="jl-width-1-3">
                             <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" />
