@@ -44,11 +44,19 @@ use Joomla\CMS\HTML\HTMLHelper;
                             <span style="color:<?php echo $color; ?>">
                                 <?php echo $slide->description; ?>
                             </span>
-                            <div><a href="<?php echo $slide->link_type; ?>" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a></div>
+                            <div class="jl-margin-top">
+                                <a href="<?php echo $slide->link_type; ?>" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a>
+                            </div>
                         </div>
                         <div class="jl-width-1-3">
-                            <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" />
-                            <?php echo $slide->new_product; ?>
+                            <div class="jl-position-relative">
+                            <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
+                                <div class="ribbon-wrapper-container jl-position-absolute">
+                                    <div class="ribbon-wrapper">
+                                        <?php echo $slide->new_product; ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
