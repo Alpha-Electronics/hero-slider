@@ -56,11 +56,13 @@ use Joomla\CMS\HTML\HTMLHelper;
                         <div class="jl-width-1-3">
                             <div class="jl-position-relative">
                                 <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
+                                <?php if ($slide->new_product == 1) : ?>
                                 <div class="ribbon-wrapper-container jl-position-absolute">
                                     <div class="ribbon-wrapper jl-text-center jl-text-uppercase" style="color:<?php echo $color; ?>">
                                         <?php echo $newproduct; ?>
                                     </div>
                                 </div>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
@@ -70,7 +72,6 @@ use Joomla\CMS\HTML\HTMLHelper;
     </ul>
 
     <div class="jl-dark">
-
         <a class="jl-position-center-left jl-position-small jl-hidden-hover" href="#" jl-slideshow-item="previous"><i class="fa-solid fa-circle-chevron-left fa-lg"></i></a>
         <a class="jl-position-center-right jl-position-small jl-hidden-hover" href="#" jl-slideshow-item="next"><i class="fa-solid fa-circle-chevron-right fa-lg"></i></a>
     </div>
