@@ -51,16 +51,16 @@ use Joomla\CMS\HTML\HTMLHelper;
                 <div class="jl-container">
                     <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right" jl-scrollspy="target: > div; cls: jl-animation-fade; delay: 500">
                         <div class="jl-width-2-3">
-                            <img src="<?php echo $slide->client_logo; ?>" alt="<?php echo $slide->title; ?>" />
-                            <h2 style="color:<?php echo $color; ?>"><?php echo $slide->title; ?></h2>
-                            <span style="color:<?php echo $color; ?>">
+                            <img src="<?php echo $slide->client_logo; ?>" alt="<?php echo $slide->title; ?>" jl-scrollspy-class="jl-animation-slide-top-small"/>
+                            <h2 jl-scrollspy-class="jl-animation-slide-left-small" style="color:<?php echo $color; ?>"><?php echo $slide->title; ?></h2>
+                            <span jl-scrollspy-class="jl-animation-slide-left-small" style="color:<?php echo $color; ?>">
                                 <?php echo $slide->description; ?>
                             </span>
-                            <div class="jl-margin-top">
+                            <div class="jl-margin-top" jl-scrollspy-class="jl-animation-slide-left-small">
                                 <a href="<?php echo $link; ?>" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a>
                             </div>
                         </div>
-                        <div class="jl-width-1-3 jl-animation-toggle" jl-scrollspy-class="jl-animation-slide-right">
+                        <div class="jl-width-1-3 jl-animation-toggle" jl-scrollspy-class="jl-animation-slide-right-small">
                             <div class="jl-position-relative">
                                 <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
                                 <?php if ($slide->new_product == 1) : ?>
