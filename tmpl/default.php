@@ -25,7 +25,7 @@ use Joomla\CMS\HTML\HTMLHelper;
 
             <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
                 <div class="jl-container">
-                    <div jl-grid>
+                    <div jl-grid class="jl-padding-small">
                         <div class="jl-width-2-3">
                             <img src="<?php echo $slide->client_logo; ?>" alt="<?php echo $slide->title; ?>" />
                             <h2 style="color:<?php echo $color; ?>"><?php echo $slide->title; ?></h2>
