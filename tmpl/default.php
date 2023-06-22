@@ -24,7 +24,7 @@ use Joomla\CMS\HTML\HTMLHelper;
             endif; ?>
 
             <?php if ($slide->new_product == 1) :
-                $newproduct = 'New Product!';
+                $newproduct = '<div class="jl-text-large jl-text-uppercase">New</div>Product!';
             else :
                 $newproduct = '';
             endif; ?>

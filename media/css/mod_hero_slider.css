@@ -1,2 +1,8 @@
-.ribbon-wrapper-container {}
-.ribbon-wrapper {}
+.ribbon-wrapper-container {
+    top: 0;
+    background-color: rgb(255 0 0 / 90%);
+    padding: 5px;
+    border: 1px solid white;
+}
+.ribbon-wrapper {
+}
