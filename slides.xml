@@ -18,6 +18,11 @@
   			<option value="1">Yes</option>
 		</field>
 		<field name="backgroundcolor" type="color" default="#eee" format="rgba"	label="Set background colour" description="" />
+		<field name="textcolor" type="list" default="" required="true" label="Is the background color dark?" description="">
+  			<option value="">Please Select</option>
+  			<option value="0">No</option>
+  			<option value="1">Yes</option>
+		</field>
 		<field name="link_type" type="list" default="" label="Select link type" description="">
   			<option value="">Please Select</option>
   			<option value="0">Menu Item</option>
