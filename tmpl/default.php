@@ -62,7 +62,7 @@ use Joomla\CMS\HTML\HTMLHelper;
                         </div>
                         <div class="jl-width-1-3 jl-animation-toggle">
                             <div class="jl-position-relative">
-                                <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative jl-animation-slide-right" />
+                                <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" jl-scrollspy="cls: jl-animation-slide-right; repeat: true" />
                                 <?php if ($slide->new_product == 1) : ?>
                                     <div class="ribbon-wrapper-container jl-position-absolute">
                                         <div class="ribbon-wrapper jl-text-center jl-text-uppercase" style="color:<?php echo $color; ?>">
