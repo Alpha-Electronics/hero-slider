@@ -49,7 +49,7 @@ use Joomla\CMS\HTML\HTMLHelper;
 
             <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
             
-            <div class="jl-overlay jl-position-center jl-hidden@s jl-visible@m">
+            <div class="jl-overlay jl-position-center hidden-phone">
                 <img src="modules/mod_hero_slider/media/images/alpha-circle.png">
             </div>
                 <div class="jl-container">
