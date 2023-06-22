@@ -12,12 +12,12 @@ defined('_JEXEC') or die('Restricted access');
 use Joomla\CMS\HTML\HTMLHelper;
 
 ?>
-<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="autoplay: true; animation: scale; max-height:580">
-    <div class="container">
+<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="autoplay: true; animation: scale; max-height:580" style="background-color:<?php echo $slide->backgroundcolor; ?>>
+    <div class="jl-container">
     <ul class="jl-slideshow-items">
         <?php foreach ($slides as $slide) : ?>
             <li>
-                <div style="background-color:<?php echo $slide->backgroundcolor; ?>" jl-grid>
+                <div jl-grid>
                     <div class="jl-width-2-3">
                         <img src="<?php echo $slide->client_logo; ?>" alt="" />
                         <h2><?php echo $slide->title; ?></h2>
