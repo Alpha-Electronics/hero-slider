@@ -10,7 +10,6 @@
 		<field name="client_logo" type="media" showon="show_client_logo:1" directory="client_logos" label="Select client logo"/>
 		<field name="title" type="text" default="" label="Title" description="" filter="raw" />
 		<field name="description" type="editor" default="" label="Description" description="" filter="safehtml" />
-		<field name="button" type="text" default="" label="Button Text" description="" filter="raw" />
 		<field name="product_image_one" type="media" directory="" label="Select product image"/>
 		<field name="new_product" type="list" default="" required="true" label="Is this a new product?" description="">
   			<option value="">Please Select</option>
@@ -22,6 +21,14 @@
   			<option value="">Please Select</option>
   			<option value="0">No</option>
   			<option value="1">Yes</option>
+		</field>
+		<field name="button" type="text" default="" label="Button Text" description="" filter="raw" />
+		<field name="button_style" type="list" default="" label="Select button style" description="">
+  			<option value="">Please Select</option>
+  			<option value="0">Default</option>
+  			<option value="1">Primary</option>
+			<option value="2">Secondary</option>
+			<option value="3">Text</option>
 		</field>
 		<field name="link_type" type="list" default="" label="Select link type" description="">
   			<option value="">Please Select</option>
