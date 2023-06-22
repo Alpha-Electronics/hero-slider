@@ -57,7 +57,7 @@ use Joomla\CMS\HTML\HTMLHelper;
                             <div class="jl-position-relative">
                                 <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
                                 <div class="ribbon-wrapper-container jl-position-absolute">
-                                    <div class="ribbon-wrapper">
+                                    <div class="ribbon-wrapper" style="color:<?php echo $color; ?>">
                                         <?php echo $newproduct; ?>
                                     </div>
                                 </div>
