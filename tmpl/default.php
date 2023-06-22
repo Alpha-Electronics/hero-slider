@@ -16,8 +16,8 @@ use Joomla\CMS\HTML\HTMLHelper;
     
     <ul class="jl-slideshow-items">
         <?php foreach ($slides as $slide) : ?>
-            <li>
-                <div style="background-color:<?php echo $slide->backgroundcolor; ?>" jl-grid>
+            <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
+                <div jl-grid>
                     <div class="jl-width-2-3">
                         <img src="<?php echo $slide->client_logo; ?>" alt="" />
                         <h2><?php echo $slide->title; ?></h2>
