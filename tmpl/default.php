@@ -12,7 +12,7 @@ defined('_JEXEC') or die('Restricted access');
 use Joomla\CMS\HTML\HTMLHelper;
 
 ?>
-<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="autoplay: true; animation: scale; min-height: 430; max-height: 430">
+<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="autoplay: true; min-height: 430; max-height: 430">
 
     <ul class="jl-slideshow-items">
         <?php foreach ($slides as $slide) : ?>
@@ -49,7 +49,7 @@ use Joomla\CMS\HTML\HTMLHelper;
 
             <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
                 <div class="jl-container">
-                    <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right">
+                    <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right" jl-scrollspy="target: > div; cls: jl-animation-fade; delay: 500">
                         <div class="jl-width-2-3">
                             <img src="<?php echo $slide->client_logo; ?>" alt="<?php echo $slide->title; ?>" />
                             <h2 style="color:<?php echo $color; ?>"><?php echo $slide->title; ?></h2>
@@ -60,9 +60,9 @@ use Joomla\CMS\HTML\HTMLHelper;
                                 <a href="<?php echo $link; ?>" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a>
                             </div>
                         </div>
-                        <div class="jl-width-1-3 jl-animation-toggle">
+                        <div class="jl-width-1-3 jl-animation-toggle" jl-scrollspy-class="jl-animation-slide-right">
                             <div class="jl-position-relative">
-                                <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" jl-scrollspy="cls: jl-animation-slide-right; repeat: true" />
+                                <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
                                 <?php if ($slide->new_product == 1) : ?>
                                     <div class="ribbon-wrapper-container jl-position-absolute">
                                         <div class="ribbon-wrapper jl-text-center jl-text-uppercase" style="color:<?php echo $color; ?>">
