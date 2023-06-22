@@ -23,16 +23,21 @@ use Joomla\CMS\HTML\HTMLHelper;
                 $color = '#3c4650';
             endif; ?>
 
+            <?php if ($slide->new_product == 1) :
+                $newproduct = 'New Product!';
+            else :
+                $newproduct = '';
+            endif; ?>
 
-        <?php 
+            <?php
             if ($slide->button_style == 0) :
                 $button_style = 'jl-button-default';
             elseif ($slide->button_style == 1) :
-                    $button_style = 'jl-button-primary';
+                $button_style = 'jl-button-primary';
             elseif ($slide->button_style == 2) :
-                    $button_style = 'jl-button-secondary';
+                $button_style = 'jl-button-secondary';
             elseif ($slide->button_style == 3) :
-                    $button_style = 'jl-button-text';
+                $button_style = 'jl-button-text';
             endif; ?>
 
             <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
@@ -50,10 +55,10 @@ use Joomla\CMS\HTML\HTMLHelper;
                         </div>
                         <div class="jl-width-1-3">
                             <div class="jl-position-relative">
-                            <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
+                                <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
                                 <div class="ribbon-wrapper-container jl-position-absolute">
                                     <div class="ribbon-wrapper">
-                                        <?php echo $slide->new_product; ?>
+                                        <?php echo $newproduct; ?>
                                     </div>
                                 </div>
                             </div>
