@@ -12,7 +12,11 @@ defined('_JEXEC') or die('Restricted access');
 use Joomla\CMS\HTML\HTMLHelper;
 
 ?>
-<div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="autoplay: true; min-height: 430; max-height: 430">
+<!--Desktop View-->
+<div class="jl-position-relative jl-visible-toggle visible-desktop" tabindex="-1" jl-slideshow="autoplay: true; min-height: 430; max-height: 430">
+<!--Mobile View-->
+<div class="jl-position-relative jl-visible-toggle hidden-desktop" tabindex="-1" jl-slideshow="autoplay: true">
+
 
     <ul class="jl-slideshow-items">
         <?php foreach ($slides as $slide) : ?>
