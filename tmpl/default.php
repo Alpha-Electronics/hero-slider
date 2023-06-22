@@ -32,7 +32,7 @@ use Joomla\CMS\HTML\HTMLHelper;
                             <span style="color:<?php echo $color; ?>">
                                 <?php echo $slide->description; ?>
                             </span>
-                            <div><a class="jl-button jl-button-default"><a href="<?php echo $slide->link_type; ?>"><?php echo $slide->button; ?></a></div>
+                            <div><a href="<?php echo $slide->link_type; ?>" class="jl-button jl-button-default"><?php echo $slide->button; ?></a></div>
                         </div>
                         <div class="jl-width-1-3">
                             <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" />
