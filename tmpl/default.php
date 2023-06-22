@@ -47,7 +47,7 @@ use Joomla\CMS\HTML\HTMLHelper;
             endif; ?>
 
 
-            <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
+            <li style="background-color:<?php echo $slide->backgroundcolor; ?>" class="jl-position-relative">
                 <div class="jl-container">
                     <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right" jl-scrollspy="target: > div">
                         <div class="jl-width-2-3" jl-scrollspy-class="jl-animation-slide-left">
