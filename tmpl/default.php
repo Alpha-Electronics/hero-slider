@@ -40,6 +40,13 @@ use Joomla\CMS\HTML\HTMLHelper;
                 $button_style = 'jl-button-text';
             endif; ?>
 
+            <?php if ($slide->link_type == 0) :
+                $link = $slide->menuitem;
+            else :
+                $link = $slide->link;
+            endif; ?>
+
+
             <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
                 <div class="jl-container">
                     <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right">
@@ -50,18 +57,18 @@ use Joomla\CMS\HTML\HTMLHelper;
                                 <?php echo $slide->description; ?>
                             </span>
                             <div class="jl-margin-top">
-                                <a href="<?php echo $slide->link_type; ?>" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a>
+                                <a href="<?php echo $link; ?>" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a>
                             </div>
                         </div>
                         <div class="jl-width-1-3">
                             <div class="jl-position-relative">
                                 <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
                                 <?php if ($slide->new_product == 1) : ?>
-                                <div class="ribbon-wrapper-container jl-position-absolute">
-                                    <div class="ribbon-wrapper jl-text-center jl-text-uppercase" style="color:<?php echo $color; ?>">
-                                        <?php echo $newproduct; ?>
+                                    <div class="ribbon-wrapper-container jl-position-absolute">
+                                        <div class="ribbon-wrapper jl-text-center jl-text-uppercase" style="color:<?php echo $color; ?>">
+                                            <?php echo $newproduct; ?>
+                                        </div>
                                     </div>
-                                </div>
                                 <?php endif; ?>
                             </div>
                         </div>
