@@ -16,3 +16,7 @@
 .jl-dark svg.fa-lg {
     font-size: 2rem;
 }
+
+.jl-overlay img {
+    opacity: 25%;
+}
