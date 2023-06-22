@@ -10,6 +10,8 @@
 defined('_JEXEC') or die('Restricted access');
 
 use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Router\Route;
+use Joomla\CMS\Factory;
 
 ?>
 <div class="jl-position-relative jl-visible-toggle visible-desktop" tabindex="-1" jl-slideshow="autoplay: true; min-height: 430; max-height: 430">
@@ -40,28 +42,36 @@ use Joomla\CMS\HTML\HTMLHelper;
                 $button_style = 'jl-button-text';
             endif; ?>
 
-            <?php if ($slide->link_type == 0) :
-                $link = $slide->menuitem;
-            else :
-                $link = $slide->link;
-            endif; ?>
-
 
             <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
-            
-            <div class="jl-overlay jl-position-center hidden-phone">
-                <img src="modules/mod_hero_slider/media/images/alpha-circle.png">
-            </div>
+
+                <div class="jl-overlay jl-position-center hidden-phone">
+                    <img src="modules/mod_hero_slider/media/images/alpha-circle.png">
+                </div>
                 <div class="jl-container">
                     <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right" jl-scrollspy="target: > div">
                         <div class="jl-width-2-3@m" jl-scrollspy-class="jl-animation-slide-left">
-                            <img src="<?php echo $slide->client_logo; ?>" alt="<?php echo $slide->title; ?>" jl-scrollspy-class="jl-animation-slide-top"/>
+                            <img src="<?php echo $slide->client_logo; ?>" alt="<?php echo $slide->title; ?>" jl-scrollspy-class="jl-animation-slide-top" />
                             <h2 jl-scrollspy-class="jl-animation-slide-left" style="color:<?php echo $color; ?>"><?php echo $slide->title; ?></h2>
                             <span jl-scrollspy-class="jl-animation-slide-left" style="color:<?php echo $color; ?>">
                                 <?php echo $slide->description; ?>
                             </span>
                             <div class="jl-margin-top" jl-scrollspy-class="jl-animation-slide-left">
-                                <a href="<?php echo $link; ?>" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a>
+                                <?php if ($slide->link_type == 0) : ?>
+
+                                    <?php
+                                    $menuItemId = $slide->menuitem;
+                                    $menu = Factory::getApplication()->getMenu();
+                                    $item = $menu->getItem($menuItemId);
+
+                                    if ($item) {
+                                        $url = Route::_('index.php?Itemid=' . $item->id);
+                                    echo '<a href="'.$url.'" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a>';
+                                    }
+                                    ?>
+                                <?php else : ?>
+                                    <a href="<?php echo $slide->menuitem; ?>" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a>
+                                <?php endif; ?>
                             </div>
                         </div>
                         <div class="jl-width-1-3@m jl-animation-toggle" jl-scrollspy-class="jl-animation-slide-right">
