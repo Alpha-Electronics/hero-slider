@@ -66,7 +66,7 @@ use Joomla\CMS\Factory;
 
                                     if ($item) {
                                         $url = Route::_('index.php?Itemid=' . $item->id);
-                                    echo '<a href="'.$url.'" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a>';
+                                    echo '<a href="'.$url.'" class="jl-button '.$button_style.'">'.$slide->button.'</a>';
                                     }
                                     ?>
                                 <?php else : ?>
