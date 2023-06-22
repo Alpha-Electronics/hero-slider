@@ -48,6 +48,10 @@ use Joomla\CMS\HTML\HTMLHelper;
 
 
             <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
+            
+            <div class="jl-overlay jl-overlay-default jl-position-center">
+                <p>Center</p>
+            </div>
                 <div class="jl-container">
                     <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right" jl-scrollspy="target: > div">
                         <div class="jl-width-2-3" jl-scrollspy-class="jl-animation-slide-left">
