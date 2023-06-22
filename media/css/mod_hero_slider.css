@@ -12,3 +12,7 @@
     font-weight: 700;
     line-height: 1;
 }
+
+.jl-dark svg.ga-lg {
+    font-size: 2rem;
+}
