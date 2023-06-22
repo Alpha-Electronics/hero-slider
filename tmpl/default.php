@@ -38,3 +38,27 @@ use Joomla\CMS\HTML\HTMLHelper;
         <a class="jl-position-center-right jl-position-small jl-hidden-hover" href="#" jl-slidenav-next jl-slideshow-item="next"></a>
     </div>
 </div>
+
+
+<div class="jl-container">
+    <ul class="jl-slideshow-items">
+        <?php foreach ($slides as $slide) : ?>
+            <div class="jl-position-relative jl-visible-toggle" tabindex="-1" jl-slideshow="autoplay: true; animation: scale; max-height:580" style="background-color:<?php echo $slides[0]->backgroundcolor; ?>">
+                <li>
+                    <div jl-grid>
+                        <div class="jl-width-2-3">
+                            <img src="<?php echo $slide->client_logo; ?>" alt="" />
+                            <h2><?php echo $slide->title; ?></h2>
+                            <?php echo $slide->description; ?>
+                            <a class="jl-button jl-button-default"><a href="<?php echo $slide->link_type; ?>"><?php echo $slide->button; ?></a>
+                        </div>
+                        <div class="jl-width-1-3">
+                            <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" />
+                            <?php echo $slide->new_product; ?>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        <?php endforeach; ?>
+    </ul>
+</div>
