@@ -19,10 +19,19 @@ use Joomla\CMS\Factory;
     <ul class="jl-slideshow-items">
         <?php foreach ($slides as $slide) : ?>
 
-            <?php if ($slide->textcolor == 1) :
-                $color = 'white';
-            else :
-                $color = '#3c4650';
+            <?php
+            if ($slide->backgroundcolor == 0) :
+                $backgroundcolor = 'rgba(255,255,255,1)';
+                $color = '#ffffff';
+            elseif ($slide->backgroundcolor == 1) :
+                $backgroundcolor = 'rgba(254,190,14,1)';
+                $color = '#000000';
+            elseif ($slide->backgroundcolor == 2) :
+                $backgroundcolor = 'rgba(255,0,0,1)';
+                $color = '#ffffff';
+            elseif ($slide->backgroundcolor == 3) :
+                $backgroundcolor = 'rgba(0,0,0,1)';
+                $color = '#ffffff';
             endif; ?>
 
             <?php if ($slide->new_product == 1) :
@@ -43,7 +52,7 @@ use Joomla\CMS\Factory;
             endif; ?>
 
 
-            <li style="background-color:<?php echo $slide->backgroundcolor; ?>">
+            <li style="background-color:<?php echo $backgroundcolor; ?>">
 
                 <div class="jl-overlay jl-position-center hidden-phone">
                     <img src="modules/mod_hero_slider/media/images/alpha-circle.png">
@@ -66,7 +75,7 @@ use Joomla\CMS\Factory;
 
                                     if ($item) {
                                         $url = Route::_('index.php?Itemid=' . $item->id);
-                                    echo '<a href="'.$url.'" class="jl-button '.$button_style.'">'.$slide->button.'</a>';
+                                        echo '<a href="' . $url . '" class="jl-button ' . $button_style . '">' . $slide->button . '</a>';
                                     }
                                     ?>
                                 <?php else : ?>
