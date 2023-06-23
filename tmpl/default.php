@@ -55,7 +55,13 @@ use Joomla\CMS\Factory;
             <li style="background-color:<?php echo $backgroundcolor; ?>">
 
                 <div class="jl-overlay jl-position-center hidden-phone">
-                    <img src="modules/mod_hero_slider/media/images/alpha-circle.png">
+                    <?php
+                    if ($slide->backgroundcolor == 3) :
+                        echo '<img src="modules/mod_hero_slider/media/images/alpha-circle-light.png">';
+                    else :
+                        echo '<img src="modules/mod_hero_slider/media/images/alpha-circle-dark.png">';
+                    endif; ?>
+
                 </div>
                 <div class="jl-container">
                     <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right" jl-scrollspy="target: > div">
@@ -87,7 +93,10 @@ use Joomla\CMS\Factory;
                             <div class="jl-position-relative">
                                 <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
                                 <?php if ($slide->new_product == 1) : ?>
-                                    <div class="ribbon-wrapper-container jl-position-absolute <?php if ($slide->backgroundcolor == 2): echo 'ribbon-wrapper-bg-red'; else: echo 'ribbon-wrapper-bg-white'; endif; ?> <?php if ($slide->corner == 1): echo 'border-radius jl-padding-small'; endif; ?>">
+                                    <div class="ribbon-wrapper-container jl-position-absolute <?php if ($slide->backgroundcolor == 2) : echo 'ribbon-wrapper-bg-red';
+                                                                                                else : echo 'ribbon-wrapper-bg-white';
+                                                                                                endif; ?> <?php if ($slide->corner == 1) : echo 'border-radius jl-padding-small';
+                                                                                                                                                                                                                        endif; ?>">
                                         <div class="ribbon-wrapper jl-text-center jl-text-uppercase">
                                             <?php echo $newproduct; ?>
                                         </div>
