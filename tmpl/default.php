@@ -25,13 +25,13 @@ use Joomla\CMS\Factory;
                 $color = '#3c4650';
             elseif ($slide->backgroundcolor == 1) :
                 $backgroundcolor = 'rgba(254,190,14,1)';
-                $color = '#000000';
+                $color = '#3c4650';
             elseif ($slide->backgroundcolor == 2) :
                 $backgroundcolor = 'rgba(255,0,0,1)';
-                $color = '#3c4650';
+                $color = '#ffffff';
             elseif ($slide->backgroundcolor == 3) :
                 $backgroundcolor = 'rgba(0,0,0,1)';
-                $color = '#3c4650';
+                $color = '#ffffff';
             endif; ?>
 
             <?php if ($slide->new_product == 1) :
