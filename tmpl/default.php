@@ -87,7 +87,7 @@ use Joomla\CMS\Factory;
                             <div class="jl-position-relative">
                                 <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
                                 <?php if ($slide->new_product == 1) : ?>
-                                    <div class="ribbon-wrapper-container jl-position-absolute">
+                                    <div class="ribbon-wrapper-container jl-position-absolute <?php if ($slide->backgroundcolor == 2): echo 'ribbon-wrapper-bg-red'; else: echo 'ribbon-wrapper-bg-white'; ?>">
                                         <div class="ribbon-wrapper jl-text-center jl-text-uppercase">
                                             <?php echo $newproduct; ?>
                                         </div>

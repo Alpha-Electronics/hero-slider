@@ -1,12 +1,28 @@
 .ribbon-wrapper-container {
     top: 0;
-    background-color: rgb(255 0 0 / 90%);
     padding: 5px;
 }
+
+.ribbon-wrapper-bg-red {
+    background-color: rgb(255 0 0 / 90%);
+}
+
+.ribbon-wrapper-bg-white {
+    background-color: rgb(255 255 255 / 90%);
+}
+
+.ribbon-wrapper-bg-red .ribbon-wrapper {
+    color: rgb(255 255 255);
+}
+
+.ribbon-wrapper-bg-white .ribbon-wrapper {
+    color: rgb(255 0 0);
+}
+
 .ribbon-wrapper {
     text-align: center;
     line-height: 1;
-    color:#ffffff;
+    color: #ffffff;
 }
 .new-badge {
     font-size: 32px;
