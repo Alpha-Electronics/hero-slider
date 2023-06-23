@@ -4,19 +4,19 @@
 }
 
 .ribbon-wrapper-bg-red {
-    background-color: rgb(255 0 0 / 90%);
-}
-
-.ribbon-wrapper-bg-white {
     background-color: rgb(255 255 255 / 90%);
 }
 
+.ribbon-wrapper-bg-white {
+    background-color: rgb(255 0 0 / 90%);
+}
+
 .ribbon-wrapper-bg-red .ribbon-wrapper {
-    color: rgb(255 255 255);
+    color: rgb(255 0 0);
 }
 
 .ribbon-wrapper-bg-white .ribbon-wrapper {
-    color: rgb(255 0 0);
+    color: rgb(255 255 255);
 }
 
 .ribbon-wrapper {
