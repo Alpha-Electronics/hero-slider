@@ -22,16 +22,16 @@ use Joomla\CMS\Factory;
             <?php
             if ($slide->backgroundcolor == 0) :
                 $backgroundcolor = 'rgba(255,255,255,1)';
-                $color = '#ffffff';
+                $color = '#3c4650';
             elseif ($slide->backgroundcolor == 1) :
                 $backgroundcolor = 'rgba(254,190,14,1)';
                 $color = '#000000';
             elseif ($slide->backgroundcolor == 2) :
                 $backgroundcolor = 'rgba(255,0,0,1)';
-                $color = '#ffffff';
+                $color = '#3c4650';
             elseif ($slide->backgroundcolor == 3) :
                 $backgroundcolor = 'rgba(0,0,0,1)';
-                $color = '#ffffff';
+                $color = '#3c4650';
             endif; ?>
 
             <?php if ($slide->new_product == 1) :
