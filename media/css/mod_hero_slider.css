@@ -37,3 +37,9 @@
 .jl-overlay img {
     opacity: 25%;
 }
+
+.border-radius {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}

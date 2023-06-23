@@ -16,6 +16,11 @@
   			<option value="0">No</option>
   			<option value="1">Yes</option>
 		</field>
+		<field name="corner" type="list" showon="new_product:1" default="" label="New product banner corners" description="">
+  			<option value="">Please Select</option>
+  			<option value="0">Square</option>
+  			<option value="1">Rounded</option>
+		</field>
 		<field name="backgroundcolor" type="list" default="" label="Select background colour" description="">
   			<option value="">Please Select</option>
   			<option value="0">White</option>
