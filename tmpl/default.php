@@ -64,14 +64,14 @@ use Joomla\CMS\Factory;
 
                 </div>
                 <div class="jl-container">
-                    <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right" jl-scrollspy="target: > div">
-                        <div class="jl-width-2-3@m" jl-scrollspy-class="jl-animation-slide-left">
-                            <img src="<?php echo $slide->client_logo; ?>" alt="<?php echo $slide->title; ?>" jl-scrollspy-class="jl-animation-slide-top" />
-                            <h2 jl-scrollspy-class="jl-animation-slide-left" style="color:<?php echo $color; ?>"><?php echo $slide->title; ?></h2>
-                            <span jl-scrollspy-class="jl-animation-slide-left" style="color:<?php echo $color; ?>">
+                    <div jl-grid class="jl-padding jl-padding-remove-left jl-padding-remove-right">
+                        <div class="jl-width-2-3@m">
+                            <img src="<?php echo $slide->client_logo; ?>" alt="<?php echo $slide->title; ?>" />
+                            <h2 style="color:<?php echo $color; ?>"><?php echo $slide->title; ?></h2>
+                            <span style="color:<?php echo $color; ?>">
                                 <?php echo $slide->description; ?>
                             </span>
-                            <div class="jl-margin-top" jl-scrollspy-class="jl-animation-slide-left">
+                            <div class="jl-margin-top">
                                 <?php if ($slide->link_type == 0) : ?>
 
                                     <?php
@@ -89,7 +89,7 @@ use Joomla\CMS\Factory;
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="jl-width-1-3@m jl-animation-toggle" jl-scrollspy-class="jl-animation-slide-right">
+                        <div class="jl-width-1-3@m jl-animation-toggle">
                             <div class="jl-position-relative">
                                 <img src="<?php echo $slide->product_image_one; ?>" alt="<?php echo $slide->title; ?>" class="jl-position-relative" />
                                 <?php if ($slide->new_product == 1) : ?>
