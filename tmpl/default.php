@@ -85,7 +85,7 @@ use Joomla\CMS\Factory;
                                     }
                                     ?>
                                 <?php else : ?>
-                                    <a href="<?php echo $slide->menuitem; ?>" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a>
+                                    <a href="<?php echo $slide->link; ?>" class="jl-button <?php echo $button_style; ?>"><?php echo $slide->button; ?></a>
                                 <?php endif; ?>
                             </div>
                         </div>
