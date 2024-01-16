@@ -71,7 +71,7 @@ use Joomla\CMS\Factory;
                             <span style="color:<?php echo $color; ?>">
                                 <?php echo $slide->description; ?>
                             </span>
-                            <div class="jl-margin-top">
+                            <div class="jl-margin-top jl-position-absolute">
                                 <?php if ($slide->link_type == 0) : ?>
 
                                     <?php
